@@ -20,7 +20,7 @@ MUST be taken to ensure good behavior in regard to preference variables.
 
 #requires -Version 5.1
 $ErrorActionPreference = 'Stop'
-Microsoft.PowerShell.Core\Set-StrictMode -Version 'Latest'
+Microsoft.PowerShell.Core\Set-StrictMode -Version 3.0
 
 # If debugging, set moduleRoot to current directory.
 $moduleRoot = if ($MyInvocation.MyCommand.Path)
