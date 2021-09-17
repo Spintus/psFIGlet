@@ -1,4 +1,4 @@
-Import-Module "\\qa\tmp\Will\PS experiments\FIGlet\psFIGlet\psFIGlet.psd1"
+Import-Module ".\psFIGlet.psd1"
 
 $fontName        = 'big'
 $inputText       = "test `nnewline `ntest"
@@ -24,6 +24,4 @@ $errHandler = {
     }
 }
 
-$fig = New-Text $inputText @inputTextOptions $errHandler
-
-& "\\qa\tmp\Will\PS experiments\splash\splashtest.ps1" $fig
+New-Text $inputText @inputTextOptions $errHandler
