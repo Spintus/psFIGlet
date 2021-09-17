@@ -26,6 +26,4 @@ $errHandler = {
 
 $fig = New-Text $inputText @inputTextOptions $errHandler
 
-$idi = gc "\\qa\tmp\Will\BI Assets\IdentiFlight.txt"
-
 & "\\qa\tmp\Will\PS experiments\splash\splashtest.ps1" $fig
